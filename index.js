@@ -1,5 +1,10 @@
 import alfy from 'alfy'
 import { Octokit } from '@octokit/rest'
+
+const filename = process.env.JSON_FILENAME
+const nwo = process.env.GITHUB_NWO
+const token = process.env.GITHUB_TOKEN
+
 const octokit = getOctokit()
 
 try {
@@ -12,27 +17,28 @@ try {
 }
 
 function checkEnv () {
-  if (!process.env.GITHUB_JSON_FILENAME ||
-    !process.env.GITHUB_REPO ||
-    !process.env.GITHUB_TOKEN) {
-    throw new Error('Required workflow environment variables missing (GITHUB_JSON_FILENAME, GITHUB_REPO, and GITHUB_TOKEN). Please set them in your workflow settings.')
+  if (!filename || !nwo || !token) {
+    throw new Error('Required workflow user configuration missing (JSON_FILENAME, GITHUB_NWO, and GITHUB_TOKEN). Please set them in your workflow settings.')
   }
 }
 
 function getOctokit () {
   return new Octokit({
-    auth: process.env.GITHUB_TOKEN
+    auth: token
   })
 }
 
 async function getRemoteLinks () {
-  const [owner, repo] = process.env.GITHUB_REPO.split('/') || ['imjohnbo', 'ghLinks-example']
-  const path = process.env.GITHUB_JSON_FILENAME || 'ghLinks.json'
+  const [owner, repo] = nwo.split('/')
+
+  if (!owner || !repo) {
+    throw new Error('GitHub repo name with owner must be in format owner/repo, e.g. monalisa/hello-world.')
+  }
 
   const { data: ghLinks } = await octokit.repos.getContent({
     owner,
     repo,
-    path,
+    path: filename,
     mediaType: {
       format: 'raw'
     }

@@ -634,19 +634,70 @@ Community support available at https://github.com/imjohnbo/ghLinks.alfred. Enjoy
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variables</key>
-	<dict>
-		<key>GITHUB_JSON_FILENAME</key>
-		<string></string>
-		<key>GITHUB_REPO</key>
-		<string></string>
-		<key>GITHUB_TOKEN</key>
-		<string></string>
-	</dict>
-	<key>variablesdontexport</key>
 	<array>
-		<string>GITHUB_TOKEN</string>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>ghLinks.json</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>The name of the JSON file containing links</string>
+			<key>label</key>
+			<string>JSON Filename</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>JSON_FILENAME</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>imjohnbo/ghLinks</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>The GitHub repository containing JSON_FILENAME</string>
+			<key>label</key>
+			<string>GitHub repo name with owner</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>GITHUB_NWO</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>github_pat_123alongpersonalaccesstoken_replaceme456</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>GitHub token (personal access token, installation access token, etc.) to access API</string>
+			<key>label</key>
+			<string>GitHub token</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>GITHUB_TOKEN</string>
+		</dict>
 	</array>
 	<key>version</key>
 	<string>0.0.1</string>
