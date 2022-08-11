@@ -11,6 +11,8 @@ Requires a paid [Alfred Powerpack](https://www.alfredapp.com/powerpack/).
 ## Usage
 - `ghl alias` – search for a bookmark by alias
 - `ghl #tag` – search for a bookmark by tag
+- `gho` – open your link file on GitHub
+- `gha https://example.com` – start series of prompts to store a new link
 
 https://user-images.githubusercontent.com/2993937/184046331-531d6091-e72c-42ba-8c3c-e36b00876883.mp4
 
@@ -22,7 +24,10 @@ https://user-images.githubusercontent.com/2993937/184046331-531d6091-e72c-42ba-8
 npm i -g alfred-ghlinks
 ```
 
-Next, up open your trusty Alfred workflow editor and "Configure workflow" to type in 
+Next, up open your trusty Alfred workflow editor and "Configure workflow" to type in some required values:
+- Name of the JSON file with your links
+- Owner and name of the GitHub repository with the JSON file
+- GitHub token that can access the GitHub repository
 
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/2993937/184047912-3e16060b-a1d5-43d9-bedf-5866a772edce.png">
 
