@@ -13,6 +13,11 @@ https://user-images.githubusercontent.com/2993937/184046331-531d6091-e72c-42ba-8
 ```
 npm i -g alfred-ghlinks
 ```
+
+## License
+
+[MIT](LICENSE)
+
 ## Contributing
 
 Contributions are always welcome! File an issue, start a discussion, or open a pull request. 
