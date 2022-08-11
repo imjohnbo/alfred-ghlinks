@@ -1,4 +1,4 @@
-# alfred-ghlinks ![GitHub latest release](https://img.shields.io/github/v/release/imjohnbo/alfred-ghlinks) ![NPM latest release](https://img.shields.io/npm/v/alfred-ghlinks) ![MIT license](https://img.shields.io/github/license/imjohnbo/alfred-ghlinks)
+# alfred-ghlinks [![GitHub latest release](https://img.shields.io/github/v/release/imjohnbo/alfred-ghlinks)](https://github.com/imjohnbo/alfred-ghlinks/releases) [![NPM latest release](https://img.shields.io/npm/v/alfred-ghlinks)](https://www.npmjs.com/package/alfred-ghlinks) [![MIT license](https://img.shields.io/github/license/imjohnbo/alfred-ghlinks)](https://github.com/imjohnbo/alfred-ghlinks/blob/main/LICENSE)
 
 > Store, search, and collaborate on web bookmarks, powered by GitHub. 🎩
 
