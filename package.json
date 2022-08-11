@@ -1,6 +1,6 @@
 {
   "name": "alfred-ghlinks",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Store, search, and collaborate on web bookmarks, powered by GitHub.",
   "homepage": "https://github.com/imjohnbo/alfred-ghlinks",
   "main": "index.js",
