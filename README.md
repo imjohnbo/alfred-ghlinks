@@ -24,6 +24,8 @@ https://user-images.githubusercontent.com/2993937/184046331-531d6091-e72c-42ba-8
 npm i -g alfred-ghlinks
 ```
 
+Or, head over the [latest releases](https://github.com/imjohnbo/alfred-ghlinks/releases) and getchu a `zip` file.
+
 Next, up open your trusty Alfred workflow editor and "Configure workflow" to type in some required values:
 - Name of the JSON file with your links
 - Owner and name of the GitHub repository with the JSON file
